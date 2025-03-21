@@ -5,7 +5,7 @@
 
 ## 🚀 Project Structure
 
-Inside of your GraphQL-Markdown + Astro/Starlight project, you'll see the following folders and files:
+Inside your GraphQL-Markdown + Astro/Starlight project, you'll see the following folders and files:
 
 ```
 .
@@ -14,7 +14,7 @@ Inside of your GraphQL-Markdown + Astro/Starlight project, you'll see the follow
 │   ├── assets/
 │   │   └── index.mdx
 │   ├── modules/
-│   │   └──  astro-mdx.mjs
+│   │   └──  astro-mdx.cjs
 │   └── content.config.ts
 ├── astro.config.mjs
 ├── graphql.config.mjs
