@@ -7,11 +7,17 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "gqlmd": "gqlmd"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.32.2",
+    "@astrojs/starlight": "^0.31.0",
+    "@graphql-markdown/cli": "file:../graphql-markdown/packages/cli",
+    "@graphql-markdown/printer-legacy": "file:../graphql-markdown/packages/printer-legacy",
+    "@graphql-markdown/types": "^1.6.0",
     "astro": "^5.1.5",
-    "sharp": "^0.32.5"
+    "sharp": "^0.32.5",
+    "starlight-site-graph": "^0.2.2",
+    "starlight-theme-catppuccin": "^2.0.0"
   }
 }
