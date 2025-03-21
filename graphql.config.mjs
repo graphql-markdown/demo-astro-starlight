@@ -20,7 +20,7 @@ export default {
       printTypeOptions: {
         typeBadges: true,
       },
-      mdxParser: `${__dirname}/src/modules/astro-mdx.mjs`,
+      mdxParser: `${__dirname}/src/modules/astro-mdx.cjs`,
       homepage: `${__dirname}/src/assets/index.mdx`,
     },
   },
