@@ -8,13 +8,13 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "gqlmd": "gqlmd"
+    "doc": "gqlmd graphql-to-doc",
+    "gqlmd": "gqlmd",
+    "postinstall": "gqlmd graphql-to-doc"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.31.0",
-    "@graphql-markdown/cli": "file:../graphql-markdown/packages/cli",
-    "@graphql-markdown/printer-legacy": "file:../graphql-markdown/packages/printer-legacy",
-    "@graphql-markdown/types": "^1.6.0",
+    "@graphql-markdown/cli": "0.3.0",
     "astro": "^5.1.5",
     "sharp": "^0.32.5",
     "starlight-site-graph": "^0.2.2",
