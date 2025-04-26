@@ -1,6 +1,5 @@
 const mdxDeclaration = `
-import { Aside } from '@astrojs/starlight/components';
-import { Badge } from '@astrojs/starlight/components';
+import { Aside, Badge } from '@astrojs/starlight/components';
 `;
 
 const formatMDXAdmonition = (
