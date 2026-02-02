@@ -28,7 +28,7 @@ const formatMDXBadge = ({ text, classname }) => {
 const INDEX_MD = "index.md";
 
 const beforeGenerateIndexMetafileHook = async (event) => {
-  const { dirPath, category } = event;
+  const { dirPath, category } = event.data;
   const filePath = join(dirPath, INDEX_MD);
 
   if (await fileExists(filePath)) {
@@ -42,7 +42,7 @@ const beforeGenerateIndexMetafileHook = async (event) => {
 };
 
 const afterRenderTypeEntitiesHook = async (event) => {
-  const { name, filePath } = event;
+  const { name, filePath } = event.data;
   const indexFilePath = resolve(dirname(filePath), INDEX_MD);
   const pageFileName = basename(filePath);
   if (await fileExists(indexFilePath)) {
