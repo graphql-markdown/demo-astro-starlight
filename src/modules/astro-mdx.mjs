@@ -8,6 +8,8 @@ import {
   startCase,
 } from "@graphql-markdown/utils";
 
+const mdxExtension = ".mdx";
+
 const mdxDeclaration = `
 import { Aside, Badge } from '@astrojs/starlight/components';
 `;
@@ -53,6 +55,7 @@ const afterRenderTypeEntitiesHook = async (event) => {
 
 export {
   mdxDeclaration,
+  mdxExtension,
   formatMDXAdmonition,
   formatMDXBadge,
   beforeGenerateIndexMetafileHook,
