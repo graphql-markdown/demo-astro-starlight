@@ -12,6 +12,7 @@ export default {
         },
       },
       docOptions: {
+        sectionHeaderId: false,
         frontMatter: {
           prev: false,
           next: false,

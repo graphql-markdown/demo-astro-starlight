@@ -38,7 +38,7 @@ const beforeGenerateIndexMetafileHook = async (event) => {
   }
 
   const label = startCase(category);
-  const content = `<!-- ${dirPath} -->\n---\n"title": ${label}\n---\n`;
+  const content = `---\ntitle: ${label}\n---\n`;
   await ensureDir(dirPath);
   await saveFile(filePath, content);
 };
