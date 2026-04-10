@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import catppuccin from "starlight-theme-catppuccin";
+import catppuccin from "@catppuccin/starlight";
 import starlightSiteGraph from 'starlight-site-graph';
 
 // https://astro.build/config
@@ -12,9 +12,9 @@ export default defineConfig({
 			credits: true,
 			lastUpdated: true,
 			title: 'GraphQL-Markdown demo',
-			social: {
-				github: 'https://github.com/graphql-markdown/graphql-markdown',
-			},
+			social: [
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/graphql-markdown/graphql-markdown' },
+			],
 			sidebar: [
 				{
 					label: 'Operations',
