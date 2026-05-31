@@ -22,7 +22,7 @@ export default {
         typeBadges: true,
       },
       formatter: "@graphql-markdown/formatters/starlight",
-      homepage: `${__dirname}/src/assets/index.mdx`,
+      homepage: "./src/assets/index.mdx",
     },
   },
 };
