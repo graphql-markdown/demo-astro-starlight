@@ -21,7 +21,7 @@ export default {
       printTypeOptions: {
         typeBadges: true,
       },
-      mdxParser: "@graphql-markdown/formatters/starlight",
+      formatter: "@graphql-markdown/formatters/starlight",
       homepage: `${__dirname}/src/assets/index.mdx`,
     },
   },
