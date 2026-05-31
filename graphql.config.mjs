@@ -21,8 +21,8 @@ export default {
       printTypeOptions: {
         typeBadges: true,
       },
-      mdxParser: `${__dirname}/src/modules/astro-mdx.mjs`,
-      homepage: `${__dirname}/src/assets/index.mdx`,
+      formatter: "@graphql-markdown/formatters/starlight",
+      homepage: "./src/assets/index.mdx",
     },
   },
 };
