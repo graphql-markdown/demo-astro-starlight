@@ -3,6 +3,8 @@
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/graphql-markdown/demo-astro-starlight/tree/main)
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/graphql-markdown/demo-astro-starlight/tree/main)
 
+**Live demo:** [graphql-markdown.dev/demo-astro-starlight](https://graphql-markdown.dev/demo-astro-starlight/)
+
 ## 🚀 Project Structure
 
 Inside your GraphQL-Markdown + Astro/Starlight project, you'll see the following folders and files:
