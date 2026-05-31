@@ -4,7 +4,7 @@ export default {
     ["graphql-markdown"]: {
       rootPath: "./src/content/docs",
       baseURL: ".",
-      linkRoot: "/",
+      linkRoot: "/demo-astro-starlight",
       loaders: {
         UrlLoader: {
           module: "@graphql-tools/url-loader",
