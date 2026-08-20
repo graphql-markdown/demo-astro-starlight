@@ -15,8 +15,8 @@
   "dependencies": {
     "@astrojs/starlight": "^0.38.0",
     "@catppuccin/starlight": "^2.0.0",
-    "@graphql-markdown/cli": "^1.0.0",
-    "@graphql-markdown/formatters": "^1.0.0",
+    "@graphql-markdown/cli": "^1.0.1",
+    "@graphql-markdown/formatters": "^1.0.1",
     "astro": "^6.4.6",
     "sharp": "^0.35.0",
     "starlight-site-graph": "^0.5.0"
