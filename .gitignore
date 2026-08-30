@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # documentation content
 src/content/
+
+# other
+.vscode
