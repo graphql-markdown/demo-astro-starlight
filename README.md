@@ -7,7 +7,7 @@
 
 ## 🚀 Project Structure
 
-Inside your GraphQL-Markdown + Astro/Starlight project, you'll see the following folders and files:
+Inside your GraphQL-Markdown + [Astro](https://astro.build/)/[Starlight](https://starlight.astro.build/) project, you'll see the following folders and files:
 
 ```
 .
