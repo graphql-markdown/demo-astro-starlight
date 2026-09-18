@@ -13,11 +13,11 @@
     "postinstall": "gqlmd graphql-to-doc"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.41.0",
+    "@astrojs/starlight": "^0.41.11",
     "@catppuccin/starlight": "^2.1.0",
-    "@graphql-markdown/cli": "^1.0.2",
-    "@graphql-markdown/formatters": "^1.0.2",
-    "astro": "^7.2.0",
-    "sharp": "^0.35.0"
+    "@graphql-markdown/cli": "^1.1.0",
+    "@graphql-markdown/formatters": "^1.1.1",
+    "astro": "^7.3.2",
+    "sharp": "^0.35.4"
   }
 }
