@@ -18,6 +18,6 @@
     "@graphql-markdown/cli": "^1.2.0",
     "@graphql-markdown/formatters": "^1.2.0",
     "astro": "^7.3.2",
-    "sharp": "^0.35.4"
+    "sharp": "^0.35.5"
   }
 }
