@@ -23,6 +23,7 @@ export default {
       },
       formatter: "@graphql-markdown/formatters/starlight",
       homepage: "./src/assets/index.mdx",
+      telemetry: false,
     },
   },
 };
