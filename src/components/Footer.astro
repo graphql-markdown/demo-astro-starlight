@@ -1,0 +1,20 @@
+---
+import Default from "@astrojs/starlight/components/Footer.astro";
+---
+
+<Default><slot /></Default>
+<p class="gqlmd-footer">
+  Generated with <a href="https://graphql-markdown.dev">GraphQL-Markdown</a>{" · "}<a href="https://github.com/graphql-markdown/graphql-markdown">⭐ Star on GitHub</a>
+</p>
+
+<style>
+  .gqlmd-footer {
+    margin-top: 1rem;
+    font-size: var(--sl-text-sm);
+    color: var(--sl-color-gray-3);
+    text-align: center;
+  }
+  .gqlmd-footer a {
+    color: var(--sl-color-text-accent);
+  }
+</style>
