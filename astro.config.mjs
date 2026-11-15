@@ -11,6 +11,9 @@ export default defineConfig({
       plugins: [catppuccin()],
       credits: true,
       lastUpdated: true,
+      components: {
+        Footer: "./src/components/Footer.astro",
+      },
       title: "GraphQL-Markdown demo",
       social: [
         {
