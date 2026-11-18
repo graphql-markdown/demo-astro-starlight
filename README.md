@@ -14,11 +14,16 @@ Inside your GraphQL-Markdown + [Astro](https://astro.build/)/[Starlight](https:/
 ├── public/
 ├── src/
 │   ├── assets/
-│   │   └── index.mdx
-│   ├── modules/
-│   │   └──  astro-mdx.cjs
+│   │   └── index.mdx        # splash landing page (hero + schema preview)
+│   ├── components/
+│   │   └── Footer.astro
+│   ├── styles/
+│   │   └── custom.css       # zinc theme + reference page polish
 │   └── content.config.ts
+├── tests/
+│   └── visual/              # Playwright + Argos visual tests
 ├── astro.config.mjs
+├── playwright.config.ts
 ├── graphql.config.mjs
 ├── package.json
 └── tsconfig.json
@@ -35,6 +40,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm run dev`              | Starts local dev server at `localhost:4321`      |
 | `npm run build`            | Build your production site to `./dist/`          |
 | `npm run preview`          | Preview your build locally, before deploying     |
+| `npm run test:visual`      | Screenshot tests (build first; Playwright/Argos) |
 | `npm run astro ...`        | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help`  | Get help using the Astro CLI                     |
 
