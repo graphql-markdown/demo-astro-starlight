@@ -9,6 +9,16 @@ export default defineConfig({
   integrations: [
     starlight({
       plugins: [catppuccin()],
+      customCss: ["./src/styles/custom.css"],
+      pagination: false,
+      head: [
+        {
+          // Field names are emitted as `href="#"` self links; point them at their heading id.
+          tag: "script",
+          content:
+            "document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll(\".sl-markdown-content h4[id] > a[href='#'], .sl-markdown-content h5[id] > a[href='#']\").forEach((a)=>{a.href='#'+a.parentElement.id;});});",
+        },
+      ],
       credits: true,
       lastUpdated: true,
       components: {

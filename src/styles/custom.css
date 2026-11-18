@@ -1,0 +1,260 @@
+/* GraphQL-Markdown demo styles for Starlight: default Starlight accent, zinc neutrals. */
+
+:root {
+  /* Starlight's default accent, set explicitly so it wins over the Catppuccin plugin's mauve. */
+  --sl-color-accent-low: hsl(224, 54%, 20%);
+  --sl-color-accent: hsl(224, 100%, 60%);
+  --sl-color-accent-high: hsl(224, 100%, 85%);
+  --sl-color-white: #fafafa;
+  --sl-color-gray-1: #e4e4e7;
+  --sl-color-gray-2: #b3b3b9;
+  --sl-color-gray-3: #8a8a93;
+  --sl-color-gray-4: #52525b;
+  --sl-color-gray-5: #292929;
+  --sl-color-gray-6: #1b1b1b;
+  --sl-color-gray-7: #141414;
+  --sl-color-black: #0d0d0d;
+  --gqlmd-chip-bg: var(--sl-color-gray-6);
+  --gqlmd-chip-border: var(--sl-color-gray-5);
+  --gqlmd-badge-bg: color-mix(in oklch, var(--sl-color-gray-3) 15%, transparent);
+  --gqlmd-badge-text: var(--sl-color-gray-2);
+  --gqlmd-badge-deprecated-bg: color-mix(in oklch, var(--sl-color-orange) 20%, transparent);
+  --gqlmd-badge-deprecated-text: var(--sl-color-orange-high);
+  --gqlmd-shadow: #171717;
+}
+
+:root[data-theme='light'] {
+  --sl-color-accent-high: hsl(234, 80%, 30%);
+  --sl-color-accent: hsl(234, 90%, 60%);
+  --sl-color-accent-low: hsl(234, 88%, 90%);
+  --sl-color-white: #18181b;
+  --sl-color-gray-1: #27272a;
+  --sl-color-gray-2: #3f3f46;
+  --sl-color-gray-3: #52525b;
+  --sl-color-gray-4: #71717a;
+  --sl-color-gray-5: #d4d4d8;
+  --sl-color-gray-6: #ececee;
+  --sl-color-gray-7: #f4f4f5;
+  --sl-color-black: #fafafa;
+  --gqlmd-shadow: #e4e4e7;
+}
+
+/* ── Reference pages ──────────────────────────────────────────────────── */
+
+.sl-markdown-content h4:has(.gqlmd-mdx-entity) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: var(--sl-text-base);
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0 !important;
+}
+
+.sl-markdown-content .sl-heading-wrapper:has(.gqlmd-mdx-entity) {
+  margin-bottom: 0 !important;
+  line-height: 1.6;
+}
+
+.sl-markdown-content .sl-heading-wrapper:has(.gqlmd-mdx-entity) + p {
+  margin-top: 0.25rem !important;
+  color: var(--sl-color-gray-2);
+}
+
+.sl-markdown-content .sl-heading-wrapper:has(.gqlmd-mdx-entity) > .sl-anchor-link {
+  display: none;
+}
+
+.sl-markdown-content h4:has(.gqlmd-mdx-entity) a {
+  text-decoration: none;
+}
+
+.sl-markdown-content .gqlmd-mdx-entity {
+  display: inline-flex;
+  align-items: baseline;
+  padding: 0.05rem 0.45rem;
+  border: 1px solid var(--gqlmd-chip-border);
+  border-radius: 0.375rem;
+  background: var(--gqlmd-chip-bg);
+  font-size: 0.875rem;
+  color: var(--sl-color-white);
+  overflow-wrap: anywhere;
+}
+
+.sl-markdown-content .gqlmd-mdx-entity code {
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: inherit;
+  color: inherit;
+}
+
+.sl-markdown-content .gqlmd-mdx-entity-parent {
+  color: var(--sl-color-gray-3);
+}
+
+.sl-markdown-content .gqlmd-mdx-entity-name {
+  font-weight: 600;
+}
+
+.sl-markdown-content a:hover .gqlmd-mdx-entity {
+  border-color: var(--sl-color-accent);
+}
+
+.sl-markdown-content .gqlmd-mdx-bullet {
+  display: inline-block;
+  font-size: 0.4rem;
+  line-height: 1;
+  color: var(--sl-color-gray-3);
+  vertical-align: middle;
+}
+
+.sl-markdown-content a:has(> .gqlmd-mdx-entity) + .gqlmd-mdx-bullet + a .gqlmd-mdx-entity-name,
+.sl-markdown-content h4 > a[href]:not(:first-child) .gqlmd-mdx-entity-name {
+  color: var(--sl-color-accent-high);
+}
+
+/* Starlight <Badge> pills: soft translucent tint. */
+.sl-markdown-content .sl-badge {
+  padding: 0.1em 0.6em;
+  border: 0;
+  border-radius: 50rem;
+  background: var(--gqlmd-badge-bg);
+  color: var(--gqlmd-badge-text);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  line-height: 1.4;
+  vertical-align: middle;
+}
+
+.sl-markdown-content .sl-badge.caution {
+  background: var(--gqlmd-badge-deprecated-bg);
+  color: var(--gqlmd-badge-deprecated-text);
+}
+
+.sl-markdown-content .starlight-aside--caution {
+  border-inline-start-width: 4px;
+  border-radius: 0.5rem;
+  background: color-mix(in oklch, var(--sl-color-red) 10%, transparent);
+  border-color: var(--sl-color-red);
+}
+
+.sl-markdown-content .starlight-aside--caution .starlight-aside__title {
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+}
+
+.expressive-code {
+  --ec-brdRad: 0.5rem;
+}
+
+@media (max-width: 767px) {
+  .sl-markdown-content h4:has(.gqlmd-mdx-entity) {
+    font-size: 0.9rem;
+  }
+}
+
+/* ── Landing page ─────────────────────────────────────────────────────── */
+
+[data-has-hero] .hero h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+[data-has-hero] .hero h1::before {
+  content: 'GRAPHQL SCHEMA REFERENCE';
+  display: block;
+  margin-bottom: 1.25rem;
+  font-family: var(--sl-font-system-mono);
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--sl-color-accent-high);
+}
+
+.schema-preview {
+  overflow: hidden;
+  width: 100%;
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.5rem;
+  background: #1f1f1f;
+  box-shadow: 20px 20px 0 var(--gqlmd-shadow);
+  text-align: start;
+}
+
+.schema-preview-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid rgb(63 63 70 / 0.8);
+  font-family: var(--sl-font-system-mono);
+  font-size: 0.875rem;
+  color: #a1a1aa;
+}
+
+.schema-preview-chip {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  background: color-mix(in oklch, var(--sl-color-accent) 20%, transparent);
+  font-size: 0.75rem;
+  color: color-mix(in oklch, var(--sl-color-accent) 55%, white);
+}
+
+.schema-preview pre {
+  margin: 0;
+  padding: 1.5rem;
+  overflow-x: auto;
+  background: transparent;
+  font-family: var(--sl-font-system-mono);
+  font-size: 0.875rem;
+  line-height: 1.75;
+  color: #e4e4e7;
+}
+
+.schema-preview code {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.schema-preview .token-keyword { color: #d8b4fe; }
+.schema-preview .token-type { color: #93c5fd; }
+.schema-preview .token-field { color: #f0abfc; }
+
+.gqlmd-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-block: 2rem;
+  padding-block: 2rem;
+  border-block: 1px solid var(--sl-color-gray-5);
+}
+
+.gqlmd-highlights > div {
+  margin: 0 !important;
+}
+
+.gqlmd-highlights p {
+  margin: 0 !important;
+  font-family: var(--sl-font-system-mono);
+  font-size: 0.75rem;
+  color: var(--sl-color-accent-high);
+}
+
+.gqlmd-highlights span {
+  display: block;
+  margin-top: 0.75rem !important;
+  font-size: 1.125rem;
+  color: var(--sl-color-white);
+}
+
+@media (max-width: 767px) {
+  .gqlmd-highlights {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .schema-preview {
+    box-shadow: 10px 10px 0 var(--gqlmd-shadow);
+  }
+}
