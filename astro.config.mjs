@@ -24,7 +24,7 @@ export default defineConfig({
       components: {
         Footer: "./src/components/Footer.astro",
       },
-      title: "GraphQL-Markdown demo",
+      title: "GraphQL-Markdown",
       social: [
         {
           icon: "github",
