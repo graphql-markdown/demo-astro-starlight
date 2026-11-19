@@ -25,3 +25,9 @@ src/content/
 
 # other
 .vscode
+
+# playwright
+test-results/
+playwright-report/
+blob-report/
+.serve/

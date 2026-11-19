@@ -7,6 +7,7 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "test:visual": "playwright test",
     "astro": "astro",
     "doc": "gqlmd graphql-to-doc",
     "gqlmd": "gqlmd",
@@ -19,5 +20,10 @@
     "@graphql-markdown/formatters": "^1.2.2",
     "astro": "^7.4.10",
     "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "@argos-ci/playwright": "^7.10.0",
+    "@playwright/test": "^1.65.1",
+    "serve": "^14.2.8"
   }
 }
