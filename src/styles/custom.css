@@ -173,6 +173,14 @@
   color: var(--sl-color-accent-high);
 }
 
+/* Hero buttons: rectangular, like the other demos. Starlight has no setting for the shape. */
+[data-has-hero] .hero .sl-link-button {
+  padding: 0.7rem 1.4rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 .schema-preview {
   overflow: hidden;
   width: 100%;
