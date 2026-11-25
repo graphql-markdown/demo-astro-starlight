@@ -44,6 +44,12 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`        | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help`  | Get help using the Astro CLI                     |
 
+## Markdown copies and deprecation links
+
+Each page ends with a **View as Markdown** link to a plain Markdown copy. `npm run doc` also runs the `markdown` project of `graphql.config.mjs` (`lib/markdown-copy.mjs` formatter), writing the copies to `.markdown-copies`; `npm run build` copies them into `dist/` after `astro build`, so `/types/objects/project.md` is served next to `/types/objects/project`. The link is added by `lib/formatter.mjs`.
+
+The same formatter links type names written as inline code in deprecation reasons (for example `ProjectStatus` on `Project.state`) to their pages, as in the [hooks recipe](https://graphql-markdown.dev/docs/customize/hooks#link-entities-in-deprecation-reasons). `lib/decorators.mjs` adds a "deprecated" badge and a "Deprecated" notice for the schema's type-level `@deprecatedType` directive, in both outputs.
+
 ## 🏎️ Quick start
 
 Get your demo up and running with these commands:
